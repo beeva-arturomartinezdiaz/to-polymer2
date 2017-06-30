@@ -16,9 +16,6 @@
     "engines": {
         "node": ">=6.0.0"
     },
-    "scripts": {
-        "demo": "node to-polymer2 --demo"
-    },
     "dependencies": {
         "handlebars": "^4.0.10",
         "js-beautify": "^1.6.14"
