@@ -1,6 +1,6 @@
 {
     "name": "to-polymer2",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Transforms any Polymer1 component into its Polymer2 version",
     "keywords": [
         "node",
