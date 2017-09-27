@@ -1,0 +1,32 @@
+(function() {
+{{#if behaviors}}
+    class {{className}} extends Polymer.mixinBehaviors([{{#each
+        behaviors as |behavior| }}{{behavior}}{{/each}}], Polymer.Element) {
+{{else}}
+    class {{className}} extends Polymer.Element {
+{{/if}}
+static get is() {
+return '{{name}}';
+}
+{{#if properties}}
+    static get properties() {
+        return {
+            {{properties}}
+        };
+    }
+{{/if}}
+{{#if observers}}
+    static get observers() {
+        return [
+            {{observers}}
+        ];
+    }
+{{/if}}
+{{#if methods}}
+    {{methods}}
+{{/if}}
+
+}
+
+customElements.define({{className}}.is, {{className}});
+});
